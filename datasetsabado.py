@@ -49,7 +49,7 @@ class DataSetArboreo:
     def especies(self):
         # Creamos un set para evitar duplicados (por eso no se utiliza listas)
         especies = set()
-        # Para cada arbol, agregamos su especie al set
+        # Para cada arbol, agrega su especie al set solo si esta no se encuentra
         for arbol in self._filename:
             especies.add(arbol._especie)
         return especies # notar que tendremos las especies como categorías únicas (es decir, no se repiten)
